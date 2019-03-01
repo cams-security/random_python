@@ -10,7 +10,7 @@ df_2_array=[]
 
 def ip_range():
     for index, row in df_1.iterrows():
-        ip = str(row['{COLUMN NAME'])
+        ip = str(row['{COLUMN NAME']) #enter column name 
         if '-' in ip: #ex: 10.10.10.10 - 10.10.10.50, 10.10.10.60-10.10.10.70
             print("Range detected..expanding")
             comma_delimed = str(q_ip.split(','))
@@ -34,7 +34,7 @@ def ip_range():
             for ip in ip:
                 df_1_array.append(str(ip))
     for index, row in df_2.iterrows():
-        ip = str(row['{COLUMN NAME'])
+        ip = str(row['{COLUMN NAME']) # enter column name
         if '-' in ip: #ex: 10.10.10.10 - 10.10.10.50, 10.10.10.60-10.10.10.70
             print("Range detected..expanding")
             comma_delimed = str(ipp.split(','))
