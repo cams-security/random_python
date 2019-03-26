@@ -1,3 +1,3 @@
 # random_python
 
-Random python scripts that I put together.
+Script I use to compare sets of IPs from excels or CSVS, uses Pandas. 
