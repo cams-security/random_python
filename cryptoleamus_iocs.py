@@ -1,7 +1,10 @@
 from bs4 import BeautifulSoup
 import re, csv
 import feedparser
-
+"""
+Purpose is to grab iocs from https://paste.cryptolaemus.com/feed.xml and extract indicators and write it to a easily digestable format...
+Under construction...
+"""
 ips = []
 final_ips = []
 urls = []
@@ -30,10 +33,7 @@ def Sort_Data():
         ip = str(ip)
         ip_port = ip.split(":") #split to get IP and Port
         final_ips.append([ip_port[0], ip_port[1]])
-        # except: #too lazy to add an actual error
-        #     print("ouch ")
-        #
-        #     continue
+      
     for x in final_ips:
         print("IP {0} at Port {1}".format(x[0],x[1]))
 
